@@ -1,0 +1,44 @@
+@charset "utf-8";
+/*Kommentar*/
+body{
+	background-color: rgba(255, 103, 103, 0.72);
+}
+
+h1{
+	background-color: red;
+	color:white;
+	text-shadow: 2px 2px 1px #000; /* x y blur color */
+	display: inline; 
+	text-align: center; 
+	letter-spacing: spx;
+	font-weight: 200;
+	text-decoration: none; 
+}
+
+h6{
+	color: aqua;
+	background-color: darkgreen;
+}
+
+p{
+	background-color: red;
+	color: azure;
+	font-style: italic;
+}
+
+ul{
+	border: 1px solid #000000; /* width appearance color*/
+	padding-left: 30px; 
+	list-style-type: none; 
+}
+
+ul li{
+	color: blueviolet
+}
+
+ul li a{
+	color: white;
+	text-decoration: none;
+	font-size: 30px;
+	background-color: blue;
+}

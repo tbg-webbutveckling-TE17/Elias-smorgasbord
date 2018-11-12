@@ -1,0 +1,9 @@
+@charset "utf-8";
+
+.grid {
+	margin: auto;
+	width: 80%;
+	border: 1px solid black;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}

@@ -1,0 +1,48 @@
+@charset "utf-8";
+body {
+	background: #ffa801;
+}
+
+::selection {
+	background: :red;
+	color: black;
+}
+
+h1{
+	text-align: center;
+}
+
+.wrapper {
+	margin: auto;
+	width: 50%;
+}
+
+.grid {
+	border: 1px solid black;
+	min-height: 600px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 5px;
+}
+
+.grid-item {
+	background: grey;
+	display: flex;
+	align-items: center;
+}
+
+.grid-item:nth-child(odd) {
+	background: red;
+}
+
+.grid-item a {
+	text-decoration: none;
+	color: white;
+	font-size: 32px;
+	transition: all .5s;
+	text-align: center;
+}
+
+.grid-item a:hover {
+	text-shadow: 2px 2px #000;
+}

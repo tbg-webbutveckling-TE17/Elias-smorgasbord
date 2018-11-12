@@ -1,0 +1,21 @@
+@charset "utf-8";
+/*Kommentar*/
+body{
+	background-color: orchid
+}
+
+h1{
+	text-align:center;
+	color:white;
+	text-shadow: 2px 2px 1px #000;
+	display: inline; 
+	letter-spacing: spx;
+	font-weight: 300;
+	text-decoration: none; 
+}
+
+figcaption{
+	color:white;
+	text-shadow: 1px 1px 1px #000;
+	letter-spacing: spx;
+}
