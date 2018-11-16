@@ -1,9 +1,14 @@
 @charset "utf-8";
 
 .grid {
-	margin: auto;
-	width: 80%;
 	border: 1px solid black;
+	min-height: 500px;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+}
+
+.grid-item1 {
+	border-bottom: 2px solid black;
+	border-right: 2px solid black;
 }
