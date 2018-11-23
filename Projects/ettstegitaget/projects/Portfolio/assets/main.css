@@ -1,0 +1,12 @@
+@charset "utf-8";
+h1 {
+	text-align: center;
+}
+
+.wrapper {
+	margin: auto;
+}
+
+.grid {
+	grid-template-columns: 1fr 1fr 1fr;
+}
