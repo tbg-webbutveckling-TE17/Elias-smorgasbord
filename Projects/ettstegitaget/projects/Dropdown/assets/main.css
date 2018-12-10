@@ -1,36 +1,42 @@
 @charset "utf-8";
 
 body {
-	background: purple;
+	background: white;
 }
 
 .listor {
-	display: inline;
+	display: inline-block;
 	overflow: hidden;
 }
 list {
 	overflow: hidden;
 	position: relative;
+	background-color: aqua;
+	display: inline-block;
 }
 
 li {
 	overflow: hidden;
 	display: none;
-	position: absolute;
+	position: relative;
+	background-color: blue;
+	margin: 0;
+	padding: 0; 
 }
 
 ul {
 	overflow: hidden;
 	display: none;
-	position: absolute;
+	position: relative;
+	background-color: crimson;
+	padding: none;
+	margin: 0;
 }
 
 list:hover li {
-	display: contents;
-	justify-content: center;
-	align-content: center;
+	display: inline;
 }
 
 li:hover ul {
-	display: contents;
+	display: block;
 }
