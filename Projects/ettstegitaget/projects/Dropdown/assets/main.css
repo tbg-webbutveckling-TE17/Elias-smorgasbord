@@ -1,40 +1,39 @@
 @charset "utf-8";
 
 body {
-	background: white;
+	background: purple;
 }
 
-.listor {
-	display: inline-block;
-	overflow: hidden;
+nav {
+	font-family: cursive;
+	color: white; 
 }
 list {
-	overflow: hidden;
 	position: relative;
-	background-color: aqua;
-	display: inline-block;
+	display: inline;
+	float: left;
+	padding: 30px;
+	font-size: 25px;
+	text-shadow: 2px 2px #000;
 }
 
 li {
-	overflow: hidden;
 	display: none;
+	right: 0;
 	position: relative;
-	background-color: blue;
-	margin: 0;
-	padding: 0; 
+	font-size: 15px;
+	padding-left: 20px;
 }
 
 ul {
-	overflow: hidden;
 	display: none;
+	right: 0;
 	position: relative;
-	background-color: crimson;
-	padding: none;
-	margin: 0;
+	font-size: 12px;
 }
 
 list:hover li {
-	display: inline;
+	display: block;
 }
 
 li:hover ul {
