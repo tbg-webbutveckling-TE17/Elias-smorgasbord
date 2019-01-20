@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+#kontaktform {
+	width: 50%;
+}
+
+#kontaktform fieldset {
+	border-radius: 4px;
+	background: #F3F3F3;
+	border: 1 solid #d4d4d4;
+}
+
+#kontaktform legend {
+	padding: 0 10px;
+	color: orange;
+	font-size: 18px;
+	font-family: sans-serif;
+	font-weight: bold;
+}
+/*#kontaktform label {*/
+	width: 100px;
+	display: inline-block;
+}
+
+#kontaktform p {
+	display: flex;
+	flex-flow: column;
+}
+
+#kontaktform textarea {
+	width: 99%;
+	min-height: 100px;
+	resize: none;
+}
+
+#kontaktform input[type="text"]::placeholder {
+	color: orange;
+}
+
+#kontaktform input {
+	transition: all 1s;
+}
