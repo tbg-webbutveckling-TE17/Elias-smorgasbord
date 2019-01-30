@@ -1,88 +1,85 @@
 @charset "utf-8";
 body {
-	
+	padding: 0px;
+	margin: 0px;
 }
 
 .wrapper {
-	justify-content: center;
 	width: 100%;
-	height: 700px;
 }
 
 .p1 {
-	display: block;
-	justify-content: center;
-	width: 45%;
-	margin: 0;
-	flex-direction: column;
-	align-items: center;
+	display: inline-block;
+	width: 62%;
 }
 
 .p2 {
-	display: flex;
-	justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    margin: 0;
+	display: inline;
+	width: 32%;
+	height: 100%;
+	float: right;
+	margin-right: 5%;
 }
 
 .header {
-	background-color: gray;
+	background: gray;
 	width: 95%;
 	display: block;
-	height: 15%;
+	height: 150px;
 	margin: 10px;
 }
 
 .link {
-	background-color: gray;
+	background: gray;
 	width: 95%;
-	height: 5%;
+	height: 50px;
 	margin: 10px;
 }
 
-.blog1 {
+.blog {
 	background-color: gray;
-	height: 200px;
+	height: 500px;
 	width: 100%;
 	margin: 10px;
 }
 
-.blog2 {
+.midbox {
+	background: gray;
+	height: 300px;
+	width: 100%;
 	margin: 10px;
 }
 
-.blog3 {
+.bigbox {
+	background: gray;
+	height: 500px;
+	width: 100%;
 	margin: 10px;
 }
 
-.news {
-	
+.container {
+	display: flex;
+	width: 104%;
 }
 
-.read {
-	
+.smallbox {
+	background: gray;
+	display: inline-block;
+	width: 100%;
+	height: 150px;
+	margin: 10px;
 }
 
-.area {
-	
-}
-
-.banner {
-	
-}
-
-.service {
-	
-}
-
-.social {
-	
+.smallbox1 {
+	background: gray;
+	height: 210px;
+	width: 100%;
+	margin: 10px;
 }
 
 .footer {
 	background-color: gray;
 	width: 95%;
-	height: 5%;
+	height: 50px;
 	margin: 10px;
 }
