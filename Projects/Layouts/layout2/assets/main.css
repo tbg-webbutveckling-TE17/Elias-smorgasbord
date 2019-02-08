@@ -1,0 +1,61 @@
+@charset "utf-8";
+body {
+	
+}
+
+header {
+	display: flex;
+	height: 70px;
+	width: 95%;
+	justify-content: space-between;
+	margin: 10px;
+}
+
+.logo {
+	background: gray;
+	width: 25%;
+}
+
+.banner {
+	background: gray;
+	width: 50%;
+}
+
+nav {
+	background: gray;
+	height: 50px;
+	width: 95%;
+	margin: 20px 10px 20px 10px;
+}
+
+.wrapper {
+	
+}
+
+.box1 {
+	
+}
+
+.boxes {
+	background: gray;
+}
+
+.box2 {
+	
+}
+
+.boxes1 {
+	background: gray;
+}
+
+.box3 {
+	
+}
+
+.boxes2 {
+	background: gray;
+}
+
+footer {
+	background: gray;
+}
