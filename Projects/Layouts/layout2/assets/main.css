@@ -5,7 +5,7 @@ body {
 
 header {
 	display: flex;
-	height: 70px;
+	height: 125px;
 	width: 95%;
 	justify-content: space-between;
 	margin: 10px;
@@ -23,39 +23,64 @@ header {
 
 nav {
 	background: gray;
-	height: 50px;
+	height: 100px;
 	width: 95%;
 	margin: 20px 10px 20px 10px;
 }
 
 .wrapper {
-	
-}
-
-.box1 {
-	
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
 }
 
 .boxes {
 	background: gray;
+	height: 250px;
+	margin: 10px;
+	width: 140%;
+}
+
+.categorized {
+	height: 390px;
 }
 
 .box2 {
-	
+	margin-left: 43%;
 }
 
 .boxes1 {
 	background: gray;
+	height: 300px;
+	margin: 10px;
+	width: 130%;
+}
+
+.pet {
+	height: 600px;
 }
 
 .box3 {
-	
+	margin-left: 20%;
 }
 
 .boxes2 {
 	background: gray;
+	height: 200px;
+	margin: 10px;
+	width: 82%;
+}
+
+.blog {
+	height: 400px;
+}
+
+.forum {
+	height: 290px;
 }
 
 footer {
 	background: gray;
+	height: 200px;
+	width: 95%;
+	margin: 10px;
 }
