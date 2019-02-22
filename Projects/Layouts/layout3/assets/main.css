@@ -1,0 +1,60 @@
+@charset "utf-8";
+
+body {
+	
+}
+
+header {
+	width: 100%;
+	height: 300px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.logo {
+	width: 150px;
+	height: 150px;
+	background: gray;
+	margin-top: 20px;
+	display: block;
+	border-radius: 50%;
+}
+
+nav {
+	width: 50%;
+	height: 100px;
+	display: flex;
+	margin-top: 30px;
+	justify-content: space-between;
+}
+
+.nav {
+	background: gray;
+	height: 50px;
+	width: 20%;
+}
+
+.scroller {
+	height: 500px;
+	width: 100%;
+	background-color: lightgrey;
+}
+
+.bar {
+	
+}
+
+.wrapper {
+	height: 800px;
+	width: 100px;
+}
+
+footer {
+	height: 300px;
+	width: 100%;
+	background-color: lightgrey;
+	display: flex;
+	flex-direction: row;
+}
