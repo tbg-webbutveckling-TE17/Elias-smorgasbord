@@ -9,4 +9,22 @@ nav {
 	position: fixed;
 	top: 0;
 	width: 100%;
+	display: flex;
+	flex-flow: row;
+}
+
+.home {
+	
+}
+
+.builds {
+	
+}
+
+.support {
+	
+}
+
+.oss {
+	
 }
