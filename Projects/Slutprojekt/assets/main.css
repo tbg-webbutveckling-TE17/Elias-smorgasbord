@@ -58,9 +58,13 @@ header {
 	width: 15.65%;
 }
 
+.mainsticky {
+	position: relative;
+	border: 10px solid black;
+}
+
 .rightsticky {
 	position: fixed;
-	top: 800px;
 	border: 10px solid black;
 }
 
