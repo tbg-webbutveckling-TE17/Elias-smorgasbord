@@ -59,13 +59,16 @@ header {
 }
 
 .mainsticky {
-	position: relative;
-	border: 10px solid black;
+	position: static;
+	margin-top: 600px;
+	height: 1900px;
+	top: 200px;
 }
 
 .rightsticky {
 	position: fixed;
-	border: 10px solid black;
+	width: 15.65%;
+	left: 20px;
 }
 
 .leftbar {
