@@ -43,71 +43,65 @@ header {
 .wrap {
 	width: 100%;
 	height: 2000px;
-	background-color: aqua;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	
 }
 
 .bar {
-	position: relative;
 	height: 600px;
 	width: 16%;
 }
 
 .leftsticky {
 	position: fixed;
-	bottom: 75px;
+	top: 8%;
 	width: 15.65%;
 }
 
 .mainsticky {
-	position: static;
-	margin-top: 600px;
-	height: 1900px;
-	top: 200px;
+	justify-content: center;
+	margin: auto;
+	left: 50px;
 }
 
 .rightsticky {
 	position: fixed;
 	width: 15.65%;
-	left: 20px;
+	right: 31px;
+	top: 8%;
 }
 
 .leftbar {
-	margin-top: 20px;
+/*	margin-top: 20px;*/
 	background-color: blue;
 	margin-left: 0.5%;
 }
 
 .main {
-	margin-top: -600px;
 	display: flex;
 	flex-direction: column;
 	width: 64%;
 	height: 1900px;
 	background-color: brown;
-	margin-left: 18%;
-}
-
-.middle {
-	width: 100%;
-	height: 2400px;
-	position: relative;
-	display: flex;
-	flex-direction: column;
 }
 
 .rightbar {
-	margin-top: -1900px;
-	left: 30px;
+/*	margin-top: -1900px;*/
+/*	left: 30px;*/
 	background-color: chartreuse;
-	margin-left: 81.5%;
+/*	margin-left: 81.5%;*/
 }
 
 .box {
 	width: 95%;
 	height: 500px;
+	justify-content: center;
 }
 
 .ad {
 	width: 95%;
 	height: 200px;
+	justify-content: center;
 }

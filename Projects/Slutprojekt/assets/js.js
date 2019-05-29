@@ -12,11 +12,11 @@ function myFunction() {
 	if (window.pageYOffset > 550) {
 		nav.classList.add("leftsticky");
 		navs.classList.add("rightsticky");
-		navss.classList.add("mainsticky")
+		navss.classList.add("mainsticky");
   } 
 	else {
 		nav.classList.remove("leftsticky");
 		navs.classList.remove("rightsticky");
-		navss.classList.remove("mainsticky")
+		navss.classList.remove("mainsticky");
   }
 }
