@@ -9,7 +9,7 @@ var rightsticky = navs.offsetTop;
 var mainsticky = navss.offsetTop;
 
 function myFunction() {
-	if (window.pageYOffset > 550) {
+	if (window.pageYOffset > 580) {
 		nav.classList.add("leftsticky");
 		navs.classList.add("rightsticky");
 		navss.classList.add("mainsticky");
