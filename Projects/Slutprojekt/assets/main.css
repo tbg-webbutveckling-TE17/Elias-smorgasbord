@@ -30,6 +30,10 @@ a {
 	font-size: 50px;
 }
 
+.button:hover {
+	transform: scale(1.05);
+}
+
 header {
 	overflow: hidden;
 	width: 100%;
@@ -71,6 +75,7 @@ header {
 }
 
 .bar {
+	background-image: url(../Pictures/Bar.png);
 	height: 600px;
 	width: 16%;
 }
@@ -96,7 +101,6 @@ header {
 }
 
 .leftbar {
-	background-color: blue;
 	margin-left: 0.5%;
 }
 
@@ -105,26 +109,26 @@ header {
 	flex-direction: column;
 	width: 64%;
 	height: 2400px;
-	background-color: brown;
+	background-color: white;
 	justify-content: space-between;
 }
 
-.rightbar {
-	background-color: chartreuse;
-}
-
 .box {
-	border: 1px solid blue;
 	width: 100%;
 	height: 600px;
 	justify-content: center;
 }
 
 .ad {
-	border: 1px solid blue;
+	justify-content: center;
 	width: 100%;
 	height: 200px;
 	justify-content: center;
+}
+
+.reklam {
+	width: 100%;
+	height: 200px;
 }
 
 .pc {
@@ -132,12 +136,20 @@ header {
 }
 
 p {
+	color: black;
 	font-size: 30px;
 	margin: 0;
 }
 
 footer {
 	background-image: url(../Pictures/Carbon.png);
-	height: 94px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	height: 93px;
 	width: 101%;
+}
+
+h2 {
+	color: white;
 }
