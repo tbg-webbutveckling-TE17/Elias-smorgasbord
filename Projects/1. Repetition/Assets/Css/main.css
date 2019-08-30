@@ -1,5 +1,6 @@
 body {
-    background-color: #ecf0f1;    
+    background-color: #ecf0f1;
+    background-image: url(https://comps.canstockphoto.com/abstract-horizontal-striped-pattern-drawing_csp55870090.jpg)
 }
 
 .wrapper {
@@ -37,4 +38,47 @@ nav ul li a {
 
 nav ul li a:hover {
     background: rgb(0, 0, 0, 0.5)
+}
+
+main {
+    min-height: 300px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: minmax(200px auto) 100px;
+    grid-template-areas: 
+        "left mid right"
+        "bottom bottom bottom";
+}
+
+.left {
+    background: #3498db;
+    grid-area: left;
+}
+
+.mid {
+    background: #e74c3c;
+    grid-area: mid;
+}
+
+.right {
+    background: #2ecc71;
+    grid-area: right;
+}
+
+.bottom {
+    background: #f1c40f;
+    grid-area: bottom;
+}
+
+footer {
+    height: 150px;
+    background: #7f8c8d;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer p:nth-child(odd) {
+    text-decoration: line-through;
 }
