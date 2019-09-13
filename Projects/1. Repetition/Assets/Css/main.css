@@ -82,3 +82,18 @@ footer p {
 footer p:nth-child(odd) {
     text-decoration: line-through;
 }
+
+.fa-hand-middle-finger {
+    font-size: 20px;
+    color: purple;
+    transition: all .3s
+}
+
+.fa-hand-middle-finger:hover {
+    transform: rotate(180deg);
+    color: #000;
+}
+
+.fa-baby-carriage {
+    
+}
