@@ -52,11 +52,15 @@ if(isEvil == true) {
 
 */
 
+
 var secretNumber = 7;
 var userInput = Number(prompt("Guess a number between 0 and 10"));
 
 if(userInput === secretNumber) {
     document.writeln("Grattis du har gissat rätt! <br>");
-} elseif(userInput === 6 ) {
-    document.writeln("Det bränns");
+    lololol = true;
+} else if(userInput === 6 || userInput === 8 ) {
+    document.writeln("Det bränns!");
+} else {
+    document.writeln("Gissa igen...");
 }
