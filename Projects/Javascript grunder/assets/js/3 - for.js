@@ -35,3 +35,28 @@ for(var i = 5; i <=50; i++) {
         console.log(i);
     }
 }
+
+var rows = 5;
+var cols = 5;
+
+for(var i = 0; i < rows; i++) {
+    for(var ii = 0; ii < cols; ii++) {
+        document.writeln('*');
+    }
+    document.writeln("<br/>");
+}
+
+for(var i = 1; i < 11; i++) {
+    for(var ii = 1; ii < 11; ii++) {
+        var result = i * ii;
+        document.writeln(i + "*" + ii + "=" + result);
+    }
+    document.writeln("<br/>")
+    document.writeln("<br/>")
+}
+
+var choices =[ 'Borgar', 'Pizza', 'Grillat', 'Tacos' ];
+
+for(var choices = 0; choices < 3; choices++) {
+    document.writeln('My #1 choice is ' + choices);
+}
