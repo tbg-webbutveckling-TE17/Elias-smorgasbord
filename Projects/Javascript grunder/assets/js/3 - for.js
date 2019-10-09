@@ -57,6 +57,16 @@ for(var i = 1; i < 11; i++) {
 
 var choices =[ 'Borgar', 'Pizza', 'Grillat', 'Tacos' ];
 
-for(var choices = 0; choices < 3; choices++) {
-    document.writeln('My #1 choice is ' + choices);
+for(var i = 0; i < choices.length; i++) {
+    document.writeln('My #' + (i + 1) + ' choice is ' + choices[i]);
+    document.writeln("<br/>");
+}
+
+for(var i = 10; i > 0; i--) {
+    document.writeln("* ".repeat(i));
+    document.writeln("<br/>");
+}
+for(var i = 0; i < 10; i++) {
+    document.writeln("* ".repeat(i));
+    document.writeln("<br/>");
 }
