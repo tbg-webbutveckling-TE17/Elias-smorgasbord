@@ -62,11 +62,34 @@ for(var i = 0; i < choices.length; i++) {
     document.writeln("<br/>");
 }
 
+for(var i = 0; i < choices.length; i++) {
+    var choiceNumber = i + 1;
+    var numberSuffix;
+    if (choiceNumber == 1) {
+        numberSuffix = 'st';
+    } else if (choiceNumber == 2) {
+        numberSuffix = 'nd'
+    } else if (choiceNumber == 3) {
+        numberSuffix = 'rd';
+    } else {
+        numberSuffix = 'th';
+    }
+    console.log("My " + choiceNumber + numberSuffix + " choice is " + choices[i]);
+}
+
 for(var i = 10; i > 0; i--) {
     document.writeln("* ".repeat(i));
     document.writeln("<br/>");
 }
+
 for(var i = 0; i < 10; i++) {
     document.writeln("* ".repeat(i));
+    document.writeln("<br/>");
+}
+
+var rows = 6;
+for(var i = 1; i < rows; i++) {
+    var j = rows - i;
+    document.writeln("&nbsp".repeat(j) + " *".repeat(i))
     document.writeln("<br/>");
 }
