@@ -49,4 +49,10 @@ function isEven(i) {
         return false;
     }
 }
-isEven(4);
+console.log(isEven(4));
+
+function kebabToSnake(str) {
+    var mahKebab = str.replace(/-/g, "_");
+    return mahKebab;
+}
+console.log(kebabToSnake("this - is -a - ---test"))
