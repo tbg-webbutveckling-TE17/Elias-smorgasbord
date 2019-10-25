@@ -56,3 +56,51 @@ function kebabToSnake(str) {
     return mahKebab;
 }
 console.log(kebabToSnake("this - is -a - ---test"))
+
+var showGlobalVar = 99; //Global variable
+function globalScope() {
+    showGlobalVar = 100
+    console.log(showGlobalVar);
+}
+console.log(showGlobalVar);
+globalScope();
+console.log(showGlobalVar);
+
+function hi() {
+    var name = "Gustaph";
+    console.log(name);
+}
+hi();
+function bye() {
+    console.log(name);
+}
+bye();
+
+
+function sing() {
+    console.log("Im singing in the rain");
+    console.log("Just singing in the rain");
+    console.log("What a glorious feeling!");
+}
+// Higher order function
+setInterval(sing, 2000); // #1
+clearInterval(1);
+setInterval(sing, 2000); // #2
+clearInterval(2);
+
+var intervalExample = setInterval(sing, 2000);
+clearInterval(intervalExample);
+
+// Anonymous function
+var anon = setInterval(function() {
+    console.log("Im an anonymous function");
+}, 1500);
+clearInterval(anon);
+
+function myTimer() {
+    var d = new Date();
+    var time = d.toLocaleTimeString();
+    document.getElementById("timeOutput").innerHTML = time;
+}
+myTimer();
+var myTime = setInterval(myTimer, 1000);
