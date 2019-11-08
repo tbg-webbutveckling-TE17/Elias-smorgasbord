@@ -104,3 +104,34 @@ function myTimer() {
 }
 myTimer();
 var myTime = setInterval(myTimer, 1000);
+
+var stopBtn = document.getElementsByTagName('button')[0];
+stopBtn.addEventListener('mouseenter', function() {
+    clearInterval(myTime);
+    alert('Time has stopped');
+})
+
+stopBtn.addEventListener('mouseenter', function() {
+    myTime = setInterval(myTimer, 1000);
+    alert('Time has resumed');
+})
+
+// Calcute tip
+
+//function calculatedTip(total) {
+    //var tipPercent = 0.15;
+    //return total * tipPercent;
+
+
+//var billTotal = prompt('Quanto Costa?');
+//var billTip = calculatedTip(billTotal);
+//var receipt = "Bill total: " + billTotal + "Tip: " + billTip;
+//console.log(receipt);
+
+function tellFortune(jobTitle, geographicLocation, partnerName, numberOfChildren) {
+    var numberOfChildren = (4, 2, 1);
+    var partnerName = ('Emma', 'Doris', 'Rolf');
+    var geographicLocation = ('New york', 'Rome', 'Malå');
+    var jobTitle = ('Doctor', 'Plumber', 'Chef');
+}
+tellFortune();
