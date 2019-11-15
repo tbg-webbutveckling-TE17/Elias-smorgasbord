@@ -111,7 +111,7 @@ stopBtn.addEventListener('mouseenter', function() {
     alert('Time has stopped');
 })
 
-stopBtn.addEventListener('mouseenter', function() {
+stopBtn.addEventListener('mouseleave', function() {
     myTime = setInterval(myTimer, 1000);
     alert('Time has resumed');
 })
@@ -129,9 +129,9 @@ stopBtn.addEventListener('mouseenter', function() {
 //console.log(receipt);
 
 function tellFortune(jobTitle, geographicLocation, partnerName, numberOfChildren) {
-    var numberOfChildren = (4, 2, 1);
-    var partnerName = ('Emma', 'Doris', 'Rolf');
-    var geographicLocation = ('New york', 'Rome', 'Malå');
-    var jobTitle = ('Doctor', 'Plumber', 'Chef');
+    var tellFuture = "You will be a " + jobTitle + " in " + geographicLocation + " and be married to " + partnerName + " with " + numberOfChildren + " children";
+    var jobTitle = ['Doctor', 'Plumber', 'Chef'];
+    var geographicLocation = ['New york', 'Rome', 'Malå'];
+    var partnerName = ['Emma', 'Doris', 'Rolf'];
+    var numberOfChildren = [4, 2, 1];
 }
-tellFortune();
