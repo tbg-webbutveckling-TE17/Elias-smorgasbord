@@ -128,10 +128,13 @@ stopBtn.addEventListener('mouseleave', function() {
 //var receipt = "Bill total: " + billTotal + "Tip: " + billTip;
 //console.log(receipt);
 
-function tellFortune(jobTitle, geographicLocation, partnerName, numberOfChildren) {
-    var tellFuture = "You will be a " + jobTitle + " in " + geographicLocation + " and be married to " + partnerName + " with " + numberOfChildren + " children";
-    var jobTitle = ['Doctor', 'Plumber', 'Chef'];
-    var geographicLocation = ['New york', 'Rome', 'Malå'];
-    var partnerName = ['Emma', 'Doris', 'Rolf'];
-    var numberOfChildren = [4, 2, 1];
-}
+var jobTitle = ['Doctor', 'Plumber', 'Chef'];
+var randJob = jobTitle[~~(Math.random()*jobTitle.length)];
+var geographicLocation = ['New york', 'Rome', 'Malå'];
+var randGeo = geographicLocation[~~(Math.random()*geographicLocation.length)];
+var partnerName = ['Emma', 'Doris', 'Rolf'];
+var randPartner = partnerName[~~(Math.random()*partnerName.length)];
+var numberOfChildren = [4, 2, 1];
+var randNum = numberOfChildren[~~(Math.random()*numberOfChildren.length)];
+var tellFortune = "You will be a " + randJob + " in " + randGeo + " and be married to " + randPartner + " with " + randNum + " children";
+fortune.innerHTML = tellFortune;
