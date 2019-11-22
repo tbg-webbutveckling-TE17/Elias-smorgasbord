@@ -128,33 +128,35 @@ stopBtn.addEventListener('mouseleave', function() {
 //var receipt = "Bill total: " + billTotal + "Tip: " + billTip;
 //console.log(receipt);
 
-var jobTitle = ['Doctor', 'Plumber', 'Chef'];
-var randJob = jobTitle[Math.floor(Math.random() * jobTitle.length)];
-var geographicLocation = ['New york', 'Rome', 'Malå'];
-var randGeo = geographicLocation[Math.floor(Math.random() * geographicLocation.length)];
-var partnerName = ['Emma', 'Doris', 'Rolf'];
-var randPartner = partnerName[Math.floor(Math.random() * partnerName.length)];
-var numberOfChildren = [4, 2, 1];
-var randNum = numberOfChildren[Math.floor(Math.random() * numberOfChildren.length)];
-function tellFortune(randJob, randGeo, randPartner, randNum) {
-    var displayFuture = document.getElementsByClassName("fortune") [1];
-    var tellFuture = "You will be a " + randJob + " in " + randGeo + " and be married to " + randPartner + " with " + randNum + " children";
+var jobArray = ['Doctor', 'Plumber', 'Chef'];
+var locArray = ['New york', 'Rome', 'Malå'];
+var partnerArray = ['Emma', 'Doris', 'Rolf'];
+var childrenArray = [4, 2, 0]
+
+function tellFortune(jobArray, locArray, partnerArray, childrenArray) {
+    var randJob = jobArray[Math.floor(Math.random() * jobArray.length)];
+    var randLoc = locArray[Math.floor(Math.random() * locArray.length)];
+    var randPartner = partnerArray[Math.floor(Math.random() * partnerArray.length)];
+    var randChild = childrenArray[Math.floor(Math.random() * childrenArray.length)];
+    var displayFuture = document.getElementsByClassName("fortune") [0];
+    var tellFuture = "You will be a " + randJob + " in " + randLoc + " and be married to " + randPartner + " with " +  randChild + " children";
     displayFuture.innerHTML = tellFuture;
-};
+}
 
-tellFortune(randJob, randGeo, randPartner, randNum)
+tellFortune(jobArray, locArray, partnerArray, childrenArray)
 
-var refreshFortune = document.getElementsByClassName("button1") [1];
-refreshFortune,addEventListener("click", function() {
-    tellFortune(randJob, randGeo, randPartner, randNum)
-});
+var refreshFortune = document.getElementsByClassName("button1") [0];
+refreshFortune.addEventListener("click", function() {
+   tellFortune(jobArray, locArray, partnerArray, childrenArray)
+})
 
-var dogAge = prompt("How old is your dog in human years?");
+var dogAge = prompt("How old is your dog in human years?")
 function calculateDogYears(dogAge) {
-    var displayDogYears = document.getElementsByClassName("doggo") [1];
-    var dogYears = dogAge * 7;
-    var showDogYears = "Your dog is " + dogYears + " in dog years"
-    displayDogYears.innerHTML = showDogYears;
-};
+   var displayDogYears = document.getElementsByClassName("doggo") [0];
+   var dogYears = dogAge * 7;
+   var showDogYears = "Your dog is " + dogYears + " in dog years"
+   
+   displayDogYears.innerHTML = showDogYears; 
+}
 
-calculateDogYears(dogAge);
+calculateDogYears(dogAge)
