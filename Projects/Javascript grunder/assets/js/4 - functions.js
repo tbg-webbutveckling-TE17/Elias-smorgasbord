@@ -129,12 +129,32 @@ stopBtn.addEventListener('mouseleave', function() {
 //console.log(receipt);
 
 var jobTitle = ['Doctor', 'Plumber', 'Chef'];
-var randJob = jobTitle[~~(Math.random()*jobTitle.length)];
+var randJob = jobTitle[Math.floor(Math.random() * jobTitle.length)];
 var geographicLocation = ['New york', 'Rome', 'Malå'];
-var randGeo = geographicLocation[~~(Math.random()*geographicLocation.length)];
+var randGeo = geographicLocation[Math.floor(Math.random() * geographicLocation.length)];
 var partnerName = ['Emma', 'Doris', 'Rolf'];
-var randPartner = partnerName[~~(Math.random()*partnerName.length)];
+var randPartner = partnerName[Math.floor(Math.random() * partnerName.length)];
 var numberOfChildren = [4, 2, 1];
-var randNum = numberOfChildren[~~(Math.random()*numberOfChildren.length)];
-var tellFortune = "You will be a " + randJob + " in " + randGeo + " and be married to " + randPartner + " with " + randNum + " children";
-fortune.innerHTML = tellFortune;
+var randNum = numberOfChildren[Math.floor(Math.random() * numberOfChildren.length)];
+function tellFortune(randJob, randGeo, randPartner, randNum) {
+    var displayFuture = document.getElementsByClassName("fortune") [1];
+    var tellFuture = "You will be a " + randJob + " in " + randGeo + " and be married to " + randPartner + " with " + randNum + " children";
+    displayFuture.innerHTML = tellFuture;
+};
+
+tellFortune(randJob, randGeo, randPartner, randNum)
+
+var refreshFortune = document.getElementsByClassName("button1") [1];
+refreshFortune,addEventListener("click", function() {
+    tellFortune(randJob, randGeo, randPartner, randNum)
+});
+
+var dogAge = prompt("How old is your dog in human years?");
+function calculateDogYears(dogAge) {
+    var displayDogYears = document.getElementsByClassName("doggo") [1];
+    var dogYears = dogAge * 7;
+    var showDogYears = "Your dog is " + dogYears + " in dog years"
+    displayDogYears.innerHTML = showDogYears;
+};
+
+calculateDogYears(dogAge);
