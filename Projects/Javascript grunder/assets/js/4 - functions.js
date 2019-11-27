@@ -160,3 +160,7 @@ function calculateDogYears(dogAge) {
 }
 
 calculateDogYears(dogAge)
+
+function calculateSupply () {
+    
+}
