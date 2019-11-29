@@ -161,6 +161,15 @@ function calculateDogYears(dogAge) {
 
 calculateDogYears(dogAge)
 
-function calculateSupply () {
-    
+var yourAge = prompt("How old are you?")
+var snackAmount = prompt("How much of your snacks do you want per day?")
+function calculateSupply (yourAge, snackAmount) {
+    var displaySnackPerDay = document.getElementsByClassName("snack") [0];
+    var supplyDate = (100 - yourAge) * 365;
+    var supplyAmount = supplyDate * snackAmount;
+    var showSupply = "You will need " + supplyAmount + " to last you until the ripe old age of 100"
+
+    displaySnackPerDay.innerHTML = showSupply;
 }
+
+calculateSupply(yourAge,snackAmount)
