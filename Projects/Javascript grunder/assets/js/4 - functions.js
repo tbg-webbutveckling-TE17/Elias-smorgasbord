@@ -173,3 +173,12 @@ function calculateSupply (yourAge, snackAmount) {
 }
 
 calculateSupply(yourAge,snackAmount)
+
+document.addEventListener("keypress", keyClick);
+var answerArray = ['G', 'O', 'A', 'T'];
+var guesses = 10;
+
+function keyClick() {
+    var correctLetter = "";
+    
+}
