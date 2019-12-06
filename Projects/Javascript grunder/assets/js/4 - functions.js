@@ -175,10 +175,33 @@ function calculateSupply (yourAge, snackAmount) {
 calculateSupply(yourAge,snackAmount)
 
 document.addEventListener("keypress", keyClick);
+document.getElementById("restart").addEventListener("click", newWord);
+var correctGuess = [" _ "," _ "," _ "," _ "];
 var answerArray = ['G', 'O', 'A', 'T'];
 var guesses = 10;
+var correctLetters = [""];
 
-function keyClick() {
-    var correctLetter = "";
-    
+function hangman() {
+    var guess = 0;
+    guess = event.keyClick;
+
+    for (var i = 0; i < word.length ; i++) {
+        if (guess == answerArray[i] && guess !== correctGuess[i]) {
+            correctGuess[i] = guess;
+            correctLetters += 1;
+            if (correctLetters == answerArray.length) {
+                reset();
+            }
+        } else {
+            if (guesses < 1) {
+            reset();
+            }
+        }
+    refresh();
+    }
+}
+function reset() {
+    guessesLeft = 10;
+    correctLetters = "";
+    correctGuess = [" _ "," _ "," _ "," _ "];
 }
