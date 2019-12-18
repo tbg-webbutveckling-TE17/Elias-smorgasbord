@@ -174,12 +174,14 @@ function calculateSupply (yourAge, snackAmount) {
 
 calculateSupply(yourAge,snackAmount)
 
-var correctGuess = [" _ "," _ "," _ "," _ "];
-var word = ["g", "o", "a", "t"];
-var guessesLeft = 10;
-var correctLetters = 0;
+var displayWord = document.getElementById("guess") [0];
+var word = ["G", "O", "A", "T"];
+var hiddenWord = ["_", "_", "_", "_"];
+
+displayWord.innerHTML = hiddenWord;
 
 document.onkeypress = function(event) {
-    var guess = event.key;
-    
+    var guess = event.which;
+    var key = document.getElementsByClassName("guess") [0];
+    key.innerHTML = "Du tryckte: " + guess;
 }
