@@ -66,3 +66,36 @@ var countries = ["Sweden", "Norway", "Finland", "Denmark", "Island"];
 countries.forEach(function(country) {
     printToScreen.innerHTML += country + " ";
 })
+
+printToScreen.innerHTML = "";
+var planets = ["Mercury", "Venus", "Earth", "Mars"];
+planets.forEach(function(planet) {
+    printToScreen.innerHTML = planet + " - ";
+});
+
+printToScreen.innerHTML = "";
+var number = [ 1, 32, 44, 112, 3, 5 ];
+var color = [ "red", "green", "blue", "yellow" ];
+
+number.forEach(function(color) {
+    if(color % 3 === 0) {
+        printToScreen.innerHTML += color;
+    }
+});
+// samma funktion som ovan
+for(var i = 0; i < number.length; i++) {
+    var num = i + 1;
+    if(number[i] % 3 === 0) {
+        printToScreen.innerHTML = number[i] + " ";
+    }
+}
+
+var numList = [ 1, 2, 3, 4, 5, 6, 7, 8, 9 ];
+
+function printReverse(numList) {
+    var newNumList = [];
+    for(var i = numlist.length - 1; i >= 0; i--) {
+        newNumList.push(numList[i]);
+    }
+    return newNumList;
+}
