@@ -90,12 +90,28 @@ for(var i = 0; i < number.length; i++) {
     }
 }
 
-var numList = [ 1, 2, 3, 4, 5, 6, 7, 8, 9 ];
+printToScreen.innerHTML = "";
 
-function printReverse(numList) {
-    var newNumList = [];
-    for(var i = numlist.length - 1; i >= 0; i--) {
-        newNumList.push(numList[i]);
+function printReverse(array) {
+    for(var i = array.length - 1; i >= 0; i--) {
+        printToScreen.innerHTML += array[i] + " ";
     }
-    return newNumList;
 }
+
+printReverse([ 1, 2, 3, 4, 5, 6, 7, 8, 9 ]);
+
+
+function isIdentical(array) {
+    var first = array[0];
+    for(var i = array.length; i < array.length; i++) {
+        if(array[i] !== first[i]) {
+            return false;
+        }
+        else{
+            return true;
+        }
+    }
+}
+
+isIdentical([1, 1, 1, 1, 1, 1, 1]);
+isIdentical([1, 1, 1, 2, 1, 1, 1]);
