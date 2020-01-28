@@ -103,15 +103,16 @@ printReverse([ 1, 2, 3, 4, 5, 6, 7, 8, 9 ]);
 
 function isIdentical(array) {
     var first = array[0];
-    for(var i = array.length; i < array.length; i++) {
-        if(array[i] !== first[i]) {
-            return false;
-        }
-        else{
-            return true;
-        }
-    }
-}
+    array.forEach(function(second){
+        if(second > first){
+            second = first;
+        };
+        
+    });
+    printToScreen.innerHTML = first;
+    return first;
+};
+
 
 isIdentical([1, 1, 1, 1, 1, 1, 1]);
 isIdentical([1, 1, 1, 2, 1, 1, 1]);
