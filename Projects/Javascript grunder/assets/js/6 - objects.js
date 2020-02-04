@@ -52,7 +52,7 @@ var posts = [
     {
         author: "Jk",
         title: "Hary Potr",
-        comments: "Worst book series ever written, absolute trash, i want a refund"
+        comments: ["Worst book series ever written, absolute trash, i want a refund", "Gay", "Movies were better"]
     },
     {
         author: "Jrrrr Tolki",
@@ -61,4 +61,8 @@ var posts = [
     },
 ];
 
-output.innerHTML = posts[0].author;
+output.innerHTML = "Author: " + posts[0].author + "<br/> Comments: " + posts[0].comments[0];
+
+posts.forEach(function(post) {
+    output.innerHTML += "Author: " + post.author + "<br/>Title: " + post.title + "<br/>Comments: " + post.comments + "<br/>";
+});
