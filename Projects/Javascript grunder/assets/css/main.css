@@ -16,3 +16,24 @@ body h1 {
 p {
     color: white;
 }
+section img {
+    width: 25%;
+}
+section button {
+    padding: 10px;
+    text-shadow: 1px 1px 0px #000000;
+    color: white;
+    text-transform: capitalize;
+    outline: none;
+}
+section button:nth-child(1) {
+    background-color: red;
+}
+
+section button:nth-child(2) {
+    background-color: blue;
+}
+
+section button:nth-child(3) {
+    background-color: saddlebrown;
+}

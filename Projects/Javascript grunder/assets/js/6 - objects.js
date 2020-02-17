@@ -66,3 +66,47 @@ output.innerHTML = "Author: " + posts[0].author + "<br/> Comments: " + posts[0].
 posts.forEach(function(post) {
     output.innerHTML += "Author: " + post.author + "<br/>Title: " + post.title + "<br/>Comments: " + post.comments + "<br/>";
 });
+output.innerHTML = "";
+
+var btnAddFriend = document.querySelector(".afriend");
+var btnRemoveFriend = document.querySelector(".rfriend");
+
+var user = {
+    friends: ["Arnold", "Stallone", "Chuck"],
+    addFriend: function(friend) {
+        this.friends.push(friend);
+    },
+    removeFriend: function() {
+        this.friends.pop();
+    }
+};
+
+btnAddFriend.addEventListener("click", function() {
+    user.addFriend(prompt("Insert name of friend: "));
+});
+
+btnRemoveFriend.addEventListener("click", removeMyFriend)
+
+function removeMyFriend() {
+    user.removeFriend();
+}
+
+// Hero object
+var btnDmgTaken = document.getElementsByTagName("button")[2];
+var btnManaRefill = document.getElementsByTagName("button")[3];
+var btnCastSpell = document.getElementsByTagName("button")[4];
+
+var hero = {
+    name: "Arne",
+    hp: 100,
+    mana: 30,
+    dmdTaken: function() {
+        this.hp = this.hp - 5;
+    },
+    manaRefill: function() {
+        this.mana += 30;
+    },
+    castSpell: function() {
+        this.mana -= 10;
+    }
+}
