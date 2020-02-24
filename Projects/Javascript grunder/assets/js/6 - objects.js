@@ -95,18 +95,51 @@ function removeMyFriend() {
 var btnDmgTaken = document.getElementsByTagName("button")[2];
 var btnManaRefill = document.getElementsByTagName("button")[3];
 var btnCastSpell = document.getElementsByTagName("button")[4];
+var hpBar = document.querySelector('.hp');
+var manaBar = document.querySelector('.mana');
+var heroImg = document.querySelector('.heroImg');
 
 var hero = {
     name: "Arne",
     hp: 100,
     mana: 30,
     dmdTaken: function() {
-        this.hp = this.hp - 5;
+        if (this.hp < 50) {
+            this.hp -= 5;
+            hpBar.innerHTML = this.hp + ' - Health is getting low!';
+            heroImg.setAttribute("src", "assets/images/wizard-bruised.png")
+        } else {
+            this.hp -= 5;
+            hpBar.innerHTML = this.hp;
+        }
     },
     manaRefill: function() {
         this.mana += 30;
+        manaBar.innerHTML = this.mana;
     },
     castSpell: function() {
         this.mana -= 10;
+        manaBar.innerHTML = this.mana;
+    },
+    gameOver: function() {
+        if (this.hp <= 0) {
+            hpBar.innerHTML = 'Game Over!';
+            heroImg.setAttribute("src", "assets/images/wizard-rip.png")
+            btnDmgTaken.classList.add;
+        }
     }
 }
+hpBar.innerHTML = hero.hp;
+manaBar.innerHTML = hero.mana;
+
+btnDmgTaken.addEventListener("click", function() {
+    hero.dmgTaken();
+});
+
+btnManaRefill.addEventListener("click", function() {
+    hero.manaRefill();
+});
+
+btnCastSpell.addEventListener("click", function() {
+    hero.castSpell();
+})

@@ -37,3 +37,17 @@ section button:nth-child(2) {
 section button:nth-child(3) {
     background-color: saddlebrown;
 }
+
+.hp {
+    color: red;
+}
+
+.mana {
+    color: blue;
+    text-shadow: 2px 2px 2px #000000;
+}
+
+.btnDmgTaken {
+    background-color: gray;
+    pointer-events: none;
+}
