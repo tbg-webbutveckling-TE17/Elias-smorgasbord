@@ -38,6 +38,28 @@ section button:nth-child(3) {
     background-color: saddlebrown;
 }
 
+.hero-Container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    border: 1px solid white;
+    margin: 5px;
+    padding: 10px;
+}
+
+.heroimg {
+    width: 30%;
+    margin-bottom: 10px;
+}
+
+.hero-buttons button {
+    padding: 10px;
+    text-shadow: 1px 1px 0px black;
+    color: white;
+    text-transform: uppercase;
+    outline:  none;
+}
+
 .hp {
     color: red;
 }
@@ -50,4 +72,43 @@ section button:nth-child(3) {
 .btnDmgTaken {
     background-color: gray;
     pointer-events: none;
+}
+
+.hero-buttons {
+    border: 3px solid white;
+}
+.hero-buttons button:before {
+    content:"> ";
+
+}
+.hero-buttons button:after {
+    content: "!";
+}
+.hero-buttons button:nth-child(1) {
+    background-color: red;
+}
+.hero-buttons button:nth-child(2) {
+    background-color: blue;
+}
+.hero-buttons button:nth-child(3) {
+    background-color: orange;
+}
+.btnGameOver {
+    background-color: grey !important;
+    pointer-events: none;
+}
+
+.btnRestart {
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    background-image: linear-gradient(to right, red, blue, yellow);
+    font-weight: bold;
+    font-size: 20px;
+    font-family: "Nunito", "sans-serif";
+    outline: none;
+    opacity: 0;
+    border-radius: 10px;
+    transition: opacity .4s;
+    transition: all 1s;
 }

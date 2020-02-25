@@ -98,6 +98,7 @@ var btnCastSpell = document.getElementsByTagName("button")[4];
 var hpBar = document.querySelector('.hp');
 var manaBar = document.querySelector('.mana');
 var heroImg = document.querySelector('.heroImg');
+var btnRestart = document.querySelector('.btnRestart');
 
 var hero = {
     name: "Arne",
@@ -125,8 +126,23 @@ var hero = {
         if (this.hp <= 0) {
             hpBar.innerHTML = 'Game Over!';
             heroImg.setAttribute("src", "assets/images/wizard-rip.png")
-            btnDmgTaken.classList.add;
+            btnDmgTaken.classList.add("btnGameOver");
+            btnManaRefill.classList.add("btnGameOver");
+            btnCastSpell.classList.add("btnGameOver");
+            btnRestart.style.opacity = 1;
+            btnRestart.style.height = 50 + "px";
+            btnRestart.classList.remove("disableBtnRestart");
         }
+    }, 
+    restartGame: function() {
+        btnRestart.style.opacity = 0;
+        btnRestart.style.height = 0 + "px";
+        hpBar.innerHTML = hero.hp = 100;
+        manaBar.innerHTML = hero.mana = 30;
+        btnDmgTaken.classList.remove("btnGameOver");
+        btnManaRefill.classList.remove("btnGameOver");
+        btnCastSpell.classList.remove("btnGameOver");
+        heroImg.setAttribute("src", "assets/images/wizard.png");
     }
 }
 hpBar.innerHTML = hero.hp;
@@ -142,4 +158,8 @@ btnManaRefill.addEventListener("click", function() {
 
 btnCastSpell.addEventListener("click", function() {
     hero.castSpell();
+});
+
+btnRestart.addEventListener("click", function() {
+    hero.restartGame();
 })
