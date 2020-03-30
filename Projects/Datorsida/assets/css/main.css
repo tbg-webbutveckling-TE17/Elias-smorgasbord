@@ -1,5 +1,4 @@
 body {
-    background-color: black;
     display: flex;
     flex-direction: column;
     width: 99%;
@@ -7,7 +6,6 @@ body {
 
 .components {
     width: 70%;
-
 }
 
 .button1 {
@@ -29,4 +27,9 @@ body {
 
 .active, .button1:hover {
     background-color: red;
+}
+
+.fa-shopping-cart {
+    margin-right: 10px;
+    color: greenyellow;
 }
