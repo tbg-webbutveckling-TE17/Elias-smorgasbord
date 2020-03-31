@@ -6,6 +6,12 @@ body {
 
 .components {
     width: 70%;
+    align-content: center;
+}
+
+.h1-head {
+    width: 100%;
+    font-size: 32px;
 }
 
 .button1 {
@@ -19,13 +25,13 @@ body {
 }
 
 .content {
-    padding: 0 20px;
+    padding: 0;
     display: none;
     overflow: hidden;
     background-color: green;
 }
 
-.active, .button1:hover {
+.active {
     background-color: red;
 }
 
