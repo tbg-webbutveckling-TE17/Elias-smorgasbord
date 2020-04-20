@@ -5,7 +5,7 @@ body {
 }
 
 .components {
-    width: 70%;
+    width: 90%;
     align-content: center;
 }
 
@@ -30,8 +30,18 @@ body {
     overflow: hidden;
 }
 
+.part-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
 .part {
-    width: 30%;
+    width: 100%;
+    text-align: center;
+}
+
+img {
+    width: 100%;
 }
 
 .active {
