@@ -13,6 +13,26 @@ for (i = 0; i < collapse.length; i++) {
     });
 }
 
-var shoppingcart = {
+function ready() {
+
+}
+
+function addToCartClick() {
     
+}
+
+function quantity() {
+
+}
+
+function remove() {
+
+}
+
+function purchase() {
+    
+}
+
+function updateCart() {
+
 }
