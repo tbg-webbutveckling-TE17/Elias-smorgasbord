@@ -18,7 +18,13 @@ function ready() {
 }
 
 function addToCartClick() {
-    
+    var title = part.getElementsByClassName(h2)[0];
+    var itemPrice = part.getElementsByClassName("price")[0];
+    var imgSrc = part.getElementsByClassName(img)[0];
+}
+
+function addItemToCart(title, itemPrice, imgSrc) {
+
 }
 
 function quantity() {
@@ -30,7 +36,12 @@ function remove() {
 }
 
 function purchase() {
-    
+    alert("Tack för ditt köp");
+    var cartItems = document.getElementsByClassName(cart-item)[0];
+    while (cartItems.hasChildNodes()) {
+        cartItems.removeChild(cartItems.firstChild)
+    }
+    updateCart();
 }
 
 function updateCart() {

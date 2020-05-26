@@ -52,3 +52,7 @@ img {
     margin-right: 10px;
     color: greenyellow;
 }
+
+.price {
+    visibility: hidden;
+}
